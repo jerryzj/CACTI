@@ -43,9 +43,11 @@ unsigned int MIN_BANKSIZE=65536;
 int cont_stats[2 /*l2 or l3*/][5/* cores */][ROUTER_TYPES][7 /*banks*/][8 /* cycle time */];
 
   Nuca::Nuca(
-      /*TechnologyParameter::*/DeviceType *dt = &(g_tp.peri_global)
+      // Fix error, constructor redifined
+      /*TechnologyParameter::*/DeviceType *dt
       ):deviceType(dt)
 {
+  dt = &(g_tp.peri_global);
   init_cont();
 }
 
