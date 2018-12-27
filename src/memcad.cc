@@ -163,7 +163,7 @@ void find_all_channels(MemCadParameters * memcad_params)
 					}
 				}
 				
-				if( (current_dimm_model== JUST_RDIMM) || (current_dimm_model== ALL)
+				if( ((current_dimm_model== JUST_RDIMM) || (current_dimm_model== ALL))
 				&&  ((d1==0) || (MemoryParameters::cost[current_io_type][1][d1-1]<INF))
 				&&  ((d2==0) || (MemoryParameters::cost[current_io_type][1][d2-1]<INF))
 				&&  ((d3==0) || (MemoryParameters::cost[current_io_type][1][d3-1]<INF)) )				
@@ -200,7 +200,7 @@ void find_all_channels(MemCadParameters * memcad_params)
 					}
 				}
 				
-				if( (current_dimm_model== JUST_UDIMM) || (current_dimm_model== ALL)
+				if( ((current_dimm_model== JUST_UDIMM) || (current_dimm_model== ALL))
 				&&  ((d1==0) || (MemoryParameters::cost[current_io_type][0][d1-1]<INF))
 				&&  ((d2==0) || (MemoryParameters::cost[current_io_type][0][d2-1]<INF))
 				&&  ((d3==0) || (MemoryParameters::cost[current_io_type][0][d3-1]<INF)) )				

@@ -1629,7 +1629,7 @@ DynamicParameter::init_CAM()
   deg_bl_muxing = 1;//FA fix as 1
   // "/ 2.0" below is due to the fact that two adjacent access transistors share drain
   // contacts in a physical layout
-  double Cbitrow_drain_cap = drain_C_(g_tp.cam.cell_a_w, NCH, 1, 0, cam_cell.w, false, true) / 2.0;//TODO: comment out these two lines
+  //double Cbitrow_drain_cap = drain_C_(g_tp.cam.cell_a_w, NCH, 1, 0, cam_cell.w, false, true) / 2.0;//TODO: comment out these two lines
 //  C_bl = num_r_subarray * (Cbitrow_drain_cap + c_b_metal);
   dram_refresh_period = 0;
 
@@ -1790,7 +1790,7 @@ DynamicParameter::init_FA()
   deg_bl_muxing = 1;//FA fix as 1
   // "/ 2.0" below is due to the fact that two adjacent access transistors share drain
   // contacts in a physical layout
-  double Cbitrow_drain_cap = drain_C_(g_tp.cam.cell_a_w, NCH, 1, 0, cam_cell.w, false, true) / 2.0;//TODO: comment out these two lines
+  //double Cbitrow_drain_cap = drain_C_(g_tp.cam.cell_a_w, NCH, 1, 0, cam_cell.w, false, true) / 2.0;//TODO: comment out these two lines
   //	  C_bl = num_r_subarray * (Cbitrow_drain_cap + c_b_metal);
   dram_refresh_period = 0;
 
